@@ -14,12 +14,12 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 import mplfinance as mpf
 
-start = '2019-07-01';end = '2020-07-01'
-df = yf.download('^N225', start=start, end=end, multi_level_index=None) # Nikkei225
+#start = '2019-07-01';end = '2020-07-01'
+#df = yf.download('^N225', start=start, end=end, multi_level_index=None) # Nikkei225
 #start = '2020-01-01';end = '2020-107-01'
 #df = yf.download('BTC-JPY', start=start, end=end, multi_level_index=None) # BTC-JPY
-#start = '2020-01-01';end = '2024-12-31'
-#df = yf.download('USDJPY=X', start=start, end=end, multi_level_index=None)  # USDJPY=X
+start = '2020-01-01';end = '2024-12-31'
+df = yf.download('USDJPY=X', start=start, end=end, multi_level_index=None)  # USDJPY=X
 
 date = df.index
 close = df['Close']
